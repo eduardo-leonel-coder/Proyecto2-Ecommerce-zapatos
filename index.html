@@ -1,13 +1,22 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Poppins:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,200;1,300;1,400;1,500;1,600;1,700;1,800&display=swap"
+        rel="stylesheet">
+
+    <link rel="stylesheet" href="style.css">
     <title>Proyecto 2 - One Page - UX/UI</title>
-    
-    
+
+
 </head>
+
 <body>
     <header>
         <div class="container">
@@ -27,56 +36,57 @@
             </nav>
         </div>
     </header>
-    
+
 
     <main>
         <!-- seccion Hero -->
         <section id="hero-section">
-            <div class="container"></div>
-            <h1>Avanza sin límites, Donde sueñes llegar, tus pasos sabran como hacerlo.</h1>
-            <p>Regalate estilo. <br>Regalate un recuerdo.</p>
+            <div class="container">
+                <h1>Avanza sin límites, Donde sueñes llegar, tus pasos sabran como hacerlo.</h1>
+                <p>Regalate estilo. <br>Regalate un recuerdo.</p>
 
-            <div>
                 <div>
-                    <p>Edición Limitada</p>
-                    <p>Compra ahora y obtén un descuento especial.</p>
-                </div>
-                <!-- Utilizando un servicio de CDN para cargar la imagen y que de manera automatica haga
+                    <div>
+                        <p>Edición Limitada</p>
+                        <p>Compra ahora y obtén un descuento especial.</p>
+                    </div>
+                    <!-- Utilizando un servicio de CDN para cargar la imagen y que de manera automatica haga
                 lo siguiente: optimice la imagen,que convierta la imagen al mejor formato posible segun el navegador, 
                 que haga un recorte de imagen con la parte mas importante. -->
-                <img src="https://res.cloudinary.com/do3y2cpuq/image/upload/f_auto,q_auto/c_fill,g_auto/w_500/h_200/v1751242026/zapatos-edicion-limitada_daiz4l.jpg" alt="zapatos edicion limitada" loading="lazy"
-                srcset="
+                    <img src="https://res.cloudinary.com/do3y2cpuq/image/upload/f_auto,q_auto/c_fill,g_auto/w_500/h_200/v1751242026/zapatos-edicion-limitada_daiz4l.jpg"
+                        alt="zapatos edicion limitada" loading="lazy" srcset="
                 https://res.cloudinary.com/do3y2cpuq/image/upload/f_auto,q_auto,c_fill,g_auto,w_400/zapatos-edicion-limitada_daiz4l.jpg 400w,
                 https://res.cloudinary.com/do3y2cpuq/image/upload/f_auto,q_auto,c_fill,g_auto,w_800/zapatos-edicion-limitada_daiz4l.jpg 800w,
                 https://res.cloudinary.com/do3y2cpuq/image/upload/f_auto,q_auto,c_fill,g_auto,w_1200/zapatos-edicion-limitada_daiz4l.jpg 1200w
-                "
-                >
+                ">
+                </div>
+
+                <a href="">Comprar ahora</a>
+                <a href="">ver mas ofertas</a>
             </div>
-            
-            <a href="">Comprar ahora</a>
-            <a href="">ver mas ofertas</a>
         </section>
 
         <!-- seccion Novedades -->
         <section id="novedades">
-            <div class="container"></div>
-            <h2>Lo más nuevo</h2>
-            <p>Explora la nueva tendencia y siéntete...</p>
+            <div class="container">
+                <h2>Lo más nuevo</h2>
+                <p>Explora la nueva tendencia y siéntete...</p>
 
-            <div>
-                <p>con más libertad</p>
-                <img src="https://res.cloudinary.com/do3y2cpuq/image/upload/f_auto,q_auto/c_fill,g_auto/w_800/h_500/v1751247652/chapulines-negros-mujer_mn5mnl.jpg" alt="chapulines negros de mujer" loading="lazy"
-                srcset="
+                <div>
+                    <p>con más libertad</p>
+                    <img src="https://res.cloudinary.com/do3y2cpuq/image/upload/f_auto,q_auto/c_fill,g_auto/w_800/h_500/v1751247652/chapulines-negros-mujer_mn5mnl.jpg"
+                        alt="chapulines negros de mujer" loading="lazy" srcset="
                 https://res.cloudinary.com/do3y2cpuq/image/upload/f_auto,q_auto,c_fill,g_auto,w_400/chapulines-negros-mujer_mn5mnl.jpg 400w,
                 https://res.cloudinary.com/do3y2cpuq/image/upload/f_auto,q_auto,c_fill,g_auto,w_800/chapulines-negros-mujer_mn5mnl.jpg 800w,
                 https://res.cloudinary.com/do3y2cpuq/image/upload/f_auto,q_auto,c_fill,g_auto,w_1200/chapulines-negros-mujer_mn5mnl.jpg 1200w
-                "
-                >
-                <!-- detalles de producto visible solo en desktop  div-->
+                ">
+                    <!-- detalles de producto visible solo en desktop  div-->
+                </div>
+                <!-- agregar mas producto en desktop -->
+                <a href="">comprar</a>
+                <a href="">mas novedades</a>
             </div>
-            <!-- agregar mas producto en desktop -->
-            <a href="">comprar</a>
-            <a href="">mas novedades</a>
+
         </section>
 
 
@@ -88,53 +98,48 @@
                 <p>Abre la puerta y da el siguiente paso a esa entrevista.</p>
                 <div>
                     <div>
-                        <img src="https://res.cloudinary.com/do3y2cpuq/image/upload/f_auto,q_auto/c_fill,g_auto/w_800/h_500/v1751252876/zapatos-formales-mujer_dxfjcz.jpg" alt=""
-                        srcset="
+                        <img src="https://res.cloudinary.com/do3y2cpuq/image/upload/f_auto,q_auto/c_fill,g_auto/w_800/h_500/v1751252876/zapatos-formales-mujer_dxfjcz.jpg"
+                            alt="" srcset="
                         https://res.cloudinary.com/do3y2cpuq/image/upload/f_auto,q_auto,c_fill,g_auto,w_400/zapatos-formales-mujer_dxfjcz.jpg 400w,
                         https://res.cloudinary.com/do3y2cpuq/image/upload/f_auto,q_auto,c_fill,g_auto,w_800/zapatos-formales-mujer_dxfjcz.jpg 800w,
                         https://res.cloudinary.com/do3y2cpuq/image/upload/f_auto,q_auto,c_fill,g_auto,w_1200/zapatos-formales-mujer_dxfjcz.jpg 1200w
-                        "
-                        >
+                        ">
                         <a href="">comprar</a>
                     </div>
                     <div>
-                        <img src="https://res.cloudinary.com/do3y2cpuq/image/upload/f_auto,q_auto/c_fill,g_auto/w_800/h_500/v1751252963/zapatos-formales_bqxqol.jpg" alt=""
-                        srcset="
+                        <img src="https://res.cloudinary.com/do3y2cpuq/image/upload/f_auto,q_auto/c_fill,g_auto/w_800/h_500/v1751252963/zapatos-formales_bqxqol.jpg"
+                            alt="" srcset="
                         https://res.cloudinary.com/do3y2cpuq/image/upload/f_auto,q_auto,c_fill,g_auto,w_400/zapatos-formales_bqxqol.jpg 400w,
                         https://res.cloudinary.com/do3y2cpuq/image/upload/f_auto,q_auto,c_fill,g_auto,w_800/zapatos-formales_bqxqol.jpg 800w,
                         https://res.cloudinary.com/do3y2cpuq/image/upload/f_auto,q_auto,c_fill,g_auto,w_1200/zapatos-formales_bqxqol.jpg 1200w
-                        "
-                        >
+                        ">
                         <a href="">comprar</a>
                     </div>
                 </div>
-                
+
                 <!-- aventureros -->
                 <h2>Para los que se atreven.</h2>
                 <p>Da el siguiente paso a la aventura</p>
                 <div>
                     <div>
-                        <img src="https://res.cloudinary.com/do3y2cpuq/image/upload/f_auto,q_auto/c_fill,g_auto/w_800/h_500/v1751249900/aventura3_v35y6i.jpg" 
-                        alt=""
-                        srcset="
+                        <img src="https://res.cloudinary.com/do3y2cpuq/image/upload/f_auto,q_auto/c_fill,g_auto/w_800/h_500/v1751249900/aventura3_v35y6i.jpg"
+                            alt="" srcset="
                         https://res.cloudinary.com/do3y2cpuq/image/upload/f_auto,q_auto,c_fill,g_auto,w_400/aventura3_v35y6i.jpg 400w,
                         https://res.cloudinary.com/do3y2cpuq/image/upload/f_auto,q_auto,c_fill,g_auto,w_800/aventura3_v35y6i.jpg 800w,
                         https://res.cloudinary.com/do3y2cpuq/image/upload/f_auto,q_auto,c_fill,g_auto,w_1200/aventura3_v35y6i.jpg 1200w
-                        "
-                        >
-                        
+                        ">
+
                         <a href="">comprar</a>
                     </div>
                     <div>
-                        <img src="https://res.cloudinary.com/do3y2cpuq/image/upload/f_auto,q_auto/c_fill,g_auto/w_800/h_500/v1751250416/aventura2_urbpll.jpg" alt=""
-                        srcset="
+                        <img src="https://res.cloudinary.com/do3y2cpuq/image/upload/f_auto,q_auto/c_fill,g_auto/w_800/h_500/v1751250416/aventura2_urbpll.jpg"
+                            alt="" srcset="
                         https://res.cloudinary.com/do3y2cpuq/image/upload/f_auto,q_auto,c_fill,g_auto,w_400/aventura2_urbpll.jpg 400w,
                         https://res.cloudinary.com/do3y2cpuq/image/upload/f_auto,q_auto,c_fill,g_auto,w_800/aventura2_urbpll.jpg 800w,
                         https://res.cloudinary.com/do3y2cpuq/image/upload/f_auto,q_auto,c_fill,g_auto,w_1200/aventura2_urbpll.jpg 1200w
-                        "
-                        >
+                        ">
                         <!-- cambiar a boton comprar -->
-                         <a href="">comprar</a>
+                        <a href="">comprar</a>
                     </div>
                 </div>
                 <a href="">ver mas sugerencias</a>
@@ -147,23 +152,21 @@
                 <h2>Para los pequeños del hogar siempre hay un lugar especial</h2>
                 <div>
                     <div>
-                        <img src="https://res.cloudinary.com/do3y2cpuq/image/upload/f_auto,q_auto/c_fill,g_auto/w_800/h_500/v1751253871/zapatos-ni%C3%B1os_mzshty.jpg" alt=""
-                        srcset="
+                        <img src="https://res.cloudinary.com/do3y2cpuq/image/upload/f_auto,q_auto/c_fill,g_auto/w_800/h_500/v1751253871/zapatos-ni%C3%B1os_mzshty.jpg"
+                            alt="" srcset="
                         https://res.cloudinary.com/do3y2cpuq/image/upload/f_auto,q_auto,c_fill,g_auto,w_400/zapatos-ni%C3%B1os_mzshty.jpg 400w,
                         https://res.cloudinary.com/do3y2cpuq/image/upload/f_auto,q_auto,c_fill,g_auto,w_800/zapatos-ni%C3%B1os_mzshty.jpg 800w,
                         https://res.cloudinary.com/do3y2cpuq/image/upload/f_auto,q_auto,c_fill,g_auto,w_1200/zapatos-ni%C3%B1os_mzshty.jpg 1200w
-                        "
-                        >
+                        ">
                         <a href="">comprar</a>
                     </div>
                     <div>
-                        <img src="https://res.cloudinary.com/do3y2cpuq/image/upload/f_auto,q_auto,c_fill,g_auto/w_800/h_500/v1751253949/zapatos-ni%C3%B1os2_t6bujr.jpg" alt=""
-                        srcset="
+                        <img src="https://res.cloudinary.com/do3y2cpuq/image/upload/f_auto,q_auto,c_fill,g_auto/w_800/h_500/v1751253949/zapatos-ni%C3%B1os2_t6bujr.jpg"
+                            alt="" srcset="
                         https://res.cloudinary.com/do3y2cpuq/image/upload/f_auto,q_auto,c_fill,g_auto,w_400/zapatos-ni%C3%B1os2_t6bujr.jpg 400w,
                         https://res.cloudinary.com/do3y2cpuq/image/upload/f_auto,q_auto,c_fill,g_auto,w_800/zapatos-ni%C3%B1os2_t6bujr.jpg 800w,
                         https://res.cloudinary.com/do3y2cpuq/image/upload/f_auto,q_auto,c_fill,g_auto,w_1200/zapatos-ni%C3%B1os2_t6bujr.jpg 1200w
-                        "
-                        >
+                        ">
                         <a href="">comprar</a>
                     </div>
                 </div>
@@ -173,33 +176,39 @@
 
 
         <!-- seccion reseña -->
-         <section id="reseña">
-            <h2>Lo que dicen nuestros clientes...</h2>
-            <div>
+        <section id="reseña">
+            <div class="container">
+                <h2>Lo que dicen nuestros clientes...</h2>
                 <div>
                     <div>
-                        <div>image</div>
-                        <div>name</div>
+                        <div>
+                            <div>image</div>
+                            <div>name</div>
+                        </div>
+                        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Praesentium incidunt eligendi ab,
+                            aut nisi nesciunt! Aspernatur nisi, nostrum corrupti expedita exercitationem, officia
+                            dolorum vero assumenda quae perspiciatis saepe, nesciunt excepturi?</p>
+                        <div>01/01/2025</div>
                     </div>
-                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Praesentium incidunt eligendi ab, aut nisi nesciunt! Aspernatur nisi, nostrum corrupti expedita exercitationem, officia dolorum vero assumenda quae perspiciatis saepe, nesciunt excepturi?</p>
-                    <div>01/01/2025</div>
-                </div>
 
-                <div>
                     <div>
-                        <div>image</div>
-                        <div>name</div>
+                        <div>
+                            <div>image</div>
+                            <div>name</div>
+                        </div>
+                        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Praesentium incidunt eligendi ab,
+                            aut nisi nesciunt! Aspernatur nisi, nostrum corrupti expedita exercitationem, officia
+                            dolorum vero assumenda quae perspiciatis saepe, nesciunt excepturi?</p>
+                        <div>01/02/2025</div>
                     </div>
-                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Praesentium incidunt eligendi ab, aut nisi nesciunt! Aspernatur nisi, nostrum corrupti expedita exercitationem, officia dolorum vero assumenda quae perspiciatis saepe, nesciunt excepturi?</p>
-                    <div>01/02/2025</div>
                 </div>
+                <a href="">ver mas testimonios</a>
             </div>
-            <a href="">ver mas testimonios</a>
-         </section>
+        </section>
 
 
-         <!-- seccion sobre nosotros -->
-         <section id="sobre-nosotros">
+        <!-- seccion sobre nosotros -->
+        <section id="sobre-nosotros">
             <div class="container">
                 <h2>Conócenos</h2>
                 <div>
@@ -212,29 +221,95 @@
                 </div>
                 <div>
                     <div>50k+</div>
-                    <p>Gracias a ti más de 50 mil en donaciones han sido destinados para las personas más necesitadas. <br>
-                    Por cada compra que realices destinamos un porcentaje de esa compra y se lo hacemos llegar a las personas de escasos recursos. <br>
-                    Gracias por tu compra.
+                    <p>Gracias a ti más de 50 mil en donaciones han sido destinados para las personas más necesitadas.
+                        <br>
+                        Por cada compra que realices destinamos un porcentaje de esa compra y se lo hacemos llegar a las
+                        personas de escasos recursos. <br>
+                        Gracias por tu compra.
                     </p>
                 </div>
                 <a href="">conoce nuestro equipo</a>
             </div>
-         </section>
+        </section>
 
 
-         <!-- seccion contacto -->
-          <section id="contacto">
-            <h2>Contacta con nosotros</h2>
-            <p>Cuéntanos tu experiencia de compra, compártenos tus dudas o sugiere mejoras para tu próxima compra.</p>
+        <!-- seccion contacto -->
+        <section id="contacto">
+            <div class="container">
+                <h2>Contacta con nosotros</h2>
+                <p>Cuéntanos tu experiencia de compra, compártenos tus dudas o sugiere mejoras para tu próxima compra.
+                </p>
 
-          </section>
+                <form action="https://getform.io/f/bolodqra" method="POST">
+
+
+
+
+                    <label for="name">Nombre completo:</label>
+                    <input type="text" id="name" name="name" required placeholder="Ejemplo: Juan Salazar">
+
+                    <label for="email">Correo eletrónico</label>
+                    <input type="email" id="email" name="email" aria-describedby="email-no-compartido" required
+                        placeholder="Ejemplo: juansalazar@gmail.com">
+                    <small id="email-no-compartido">No compartimos tu correo con nadie.</small>
+
+                    <label for="mensaje">Mensaje:</label>
+                    <textarea name="" id="mensaje" required placeholder="Escribe aquí"></textarea>
+
+                    <!-- Este input no es visible para el usuario pero si para los bots, ayuda a evitar mensajes spam (crea un honeypot). -->
+                    <input type="text" name="_gotcha" style="display: none;" !important>
+
+                    <!-- Aceptacion Términos y Condiciones -->
+                    <div class="form-check">
+
+                        <input type="checkbox" id="acepto" name="acepto" required>
+                        <label for="acepto">
+                            He leído y acepto la
+                            <a href="">Política de privacidad</a> y los
+                            <a href="">Términos y condiciones</a>
+                        </label>
+                    </div>
+
+                    <button type="submit">Enviar mensaje</button>
+
+                </form>
+            </div>
+        </section>
     </main>
 
     <footer>
+        <div class="container">
+            <div class="footer-info">
+                <h3>ecommerce.com</h3>
+                <p>Guatemala, Guatemala</p>
+            </div>
 
+            <div class="footer-links">
+                <ul>
+                    <li><a href="">Política de privacidad</a></li>
+                    <li><a href="">Términos y condiciones</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-social">
+                <h4>Búscanos en</h4>
+                <!--Los aria label como aria-label="Facebook" : sirve para accesibilidad ayudando asi a personas que usan lectores de pantalla. -->
+                <a href="https://facebook.com/ecommerce" target="_blank" rel="noopener noreferrer"
+                    aria-label="Facebook">📘</a>
+                <a href="https://twitter.com/ecommerce" target="_blank" rel="noopener noreferrer"
+                    aria-label="Twitter">🐦</a>
+                <a href="https://instagram.com/ecommerce" target="_blank" rel="noopener noreferrer"
+                    aria-label="Instagram">📸</a>
+            </div>
+
+            <div class="copy">
+                <p>&copy; 2025. Todos los derechos reservados.</p>
+            </div>
+        </div>
 
     </footer>
 
 
 </body>
+
 </html>
