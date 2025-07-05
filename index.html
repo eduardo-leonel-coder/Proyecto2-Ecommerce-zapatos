@@ -21,17 +21,19 @@
     <header>
         <div class="container">
             <nav>
-                <!-- logo de marca -->
-                <a href="">Imagen Logo</a>
+                <div class="logo">
+                    <!-- logo de marca -->
+                    <a href="">Imagen Logo</a>
+                </div>
                 <!-- menu -->
                 <ul>
-                    <li><a href="">Inicio</a></li>
-                    <li><a href="">Novedades</a></li>
-                    <li><a href="">Para ti</a></li>
-                    <li><a href="">Niños</a></li>
-                    <li><a href="">Reseñas</a></li>
-                    <li><a href="">Sobre Nosotros</a></li>
-                    <li><a href="">Contacto</a></li>
+                    <li><a href="#hero-section">Inicio</a></li>
+                    <li><a href="#novedades">Novedades</a></li>
+                    <li><a href="#para-ti">Para ti</a></li>
+                    <li><a href="#niños">Niños</a></li>
+                    <li><a href="#reseña">Reseñas</a></li>
+                    <li><a href="#sobre-nosotros">Sobre Nosotros</a></li>
+                    <li><a href="#contacto">Contacto</a></li>
                 </ul>
             </nav>
         </div>
@@ -42,27 +44,28 @@
         <!-- seccion Hero -->
         <section id="hero-section">
             <div class="container">
-                <h1>Avanza sin límites, Donde sueñes llegar, tus pasos sabran como hacerlo.</h1>
+                <h1>Donde sueñes llegar, tus pasos sabran como hacerlo.</h1>
                 <p>Regalate estilo. <br>Regalate un recuerdo.</p>
 
-                <div>
+                <div class="hero-edicion">
                     <div>
                         <p>Edición Limitada</p>
                         <p>Compra ahora y obtén un descuento especial.</p>
                     </div>
                     <!-- Utilizando un servicio de CDN para cargar la imagen y que de manera automatica haga
-                lo siguiente: optimice la imagen,que convierta la imagen al mejor formato posible segun el navegador, 
-                que haga un recorte de imagen con la parte mas importante. -->
-                    <img src="https://res.cloudinary.com/do3y2cpuq/image/upload/f_auto,q_auto/c_fill,g_auto/w_500/h_200/v1751242026/zapatos-edicion-limitada_daiz4l.jpg"
+                    lo siguiente: optimice la imagen,que convierta la imagen al mejor formato posible segun el navegador, 
+                    que haga un recorte de imagen con la parte mas importante. -->
+                    <img class="imagen-automatizada"
+                        src="https://res.cloudinary.com/do3y2cpuq/image/upload/f_auto,q_auto/c_fill,g_auto,c_scale/w_500/h_200/v1751675465/hero-section_lzicj5.jpg"
                         alt="zapatos edicion limitada" loading="lazy" srcset="
-                https://res.cloudinary.com/do3y2cpuq/image/upload/f_auto,q_auto,c_fill,g_auto,w_400/zapatos-edicion-limitada_daiz4l.jpg 400w,
-                https://res.cloudinary.com/do3y2cpuq/image/upload/f_auto,q_auto,c_fill,g_auto,w_800/zapatos-edicion-limitada_daiz4l.jpg 800w,
-                https://res.cloudinary.com/do3y2cpuq/image/upload/f_auto,q_auto,c_fill,g_auto,w_1200/zapatos-edicion-limitada_daiz4l.jpg 1200w
-                ">
+                        https://res.cloudinary.com/do3y2cpuq/image/upload/f_auto,q_auto,c_fill,g_auto,w_400/hero-section_lzicj5.jpg 400w,
+                        https://res.cloudinary.com/do3y2cpuq/image/upload/f_auto,q_auto,c_fill,g_auto,w_800/hero-section_lzicj5.jpg 800w,
+                        https://res.cloudinary.com/do3y2cpuq/image/upload/f_auto,q_auto,c_fill,g_auto,w_1200/hero-section_lzicj5.jpg 1200w
+                    ">
                 </div>
+                <a href="" class="comprar">Comprar ahora</a>
 
-                <a href="">Comprar ahora</a>
-                <a href="">ver mas ofertas</a>
+                <a href="" class="ver-mas">ver mas ofertas</a>
             </div>
         </section>
 
@@ -74,7 +77,8 @@
 
                 <div>
                     <p>con más libertad</p>
-                    <img src="https://res.cloudinary.com/do3y2cpuq/image/upload/f_auto,q_auto/c_fill,g_auto/w_800/h_500/v1751247652/chapulines-negros-mujer_mn5mnl.jpg"
+                    <img class="imagen-automatizada"
+                        src="https://res.cloudinary.com/do3y2cpuq/image/upload/f_auto,q_auto/c_fill,g_auto,c_scale/w_800/h_500/v1751247652/chapulines-negros-mujer_mn5mnl.jpg"
                         alt="chapulines negros de mujer" loading="lazy" srcset="
                 https://res.cloudinary.com/do3y2cpuq/image/upload/f_auto,q_auto,c_fill,g_auto,w_400/chapulines-negros-mujer_mn5mnl.jpg 400w,
                 https://res.cloudinary.com/do3y2cpuq/image/upload/f_auto,q_auto,c_fill,g_auto,w_800/chapulines-negros-mujer_mn5mnl.jpg 800w,
@@ -83,8 +87,8 @@
                     <!-- detalles de producto visible solo en desktop  div-->
                 </div>
                 <!-- agregar mas producto en desktop -->
-                <a href="">comprar</a>
-                <a href="">mas novedades</a>
+                <a href="" class="comprar">comprar</a>
+                <a href="" class="ver-mas">mas novedades</a>
             </div>
 
         </section>
@@ -98,51 +102,55 @@
                 <p>Abre la puerta y da el siguiente paso a esa entrevista.</p>
                 <div>
                     <div>
-                        <img src="https://res.cloudinary.com/do3y2cpuq/image/upload/f_auto,q_auto/c_fill,g_auto/w_800/h_500/v1751252876/zapatos-formales-mujer_dxfjcz.jpg"
+                        <img class="imagen-automatizada"
+                            src="https://res.cloudinary.com/do3y2cpuq/image/upload/f_auto,q_auto/c_fill,g_auto/w_800/h_500/v1751252876/zapatos-formales-mujer_dxfjcz.jpg"
                             alt="" srcset="
                         https://res.cloudinary.com/do3y2cpuq/image/upload/f_auto,q_auto,c_fill,g_auto,w_400/zapatos-formales-mujer_dxfjcz.jpg 400w,
                         https://res.cloudinary.com/do3y2cpuq/image/upload/f_auto,q_auto,c_fill,g_auto,w_800/zapatos-formales-mujer_dxfjcz.jpg 800w,
                         https://res.cloudinary.com/do3y2cpuq/image/upload/f_auto,q_auto,c_fill,g_auto,w_1200/zapatos-formales-mujer_dxfjcz.jpg 1200w
                         ">
-                        <a href="">comprar</a>
+                        <a href="" class="comprar">comprar</a>
                     </div>
-                    <div>
-                        <img src="https://res.cloudinary.com/do3y2cpuq/image/upload/f_auto,q_auto/c_fill,g_auto/w_800/h_500/v1751252963/zapatos-formales_bqxqol.jpg"
+                    <div class="image-box">
+                        <img class="imagen-automatizada"
+                            src="https://res.cloudinary.com/do3y2cpuq/image/upload/f_auto,q_auto/c_fill,g_auto,c_scale/w_800/h_500/v1751252963/zapatos-formales_bqxqol.jpg"
                             alt="" srcset="
                         https://res.cloudinary.com/do3y2cpuq/image/upload/f_auto,q_auto,c_fill,g_auto,w_400/zapatos-formales_bqxqol.jpg 400w,
                         https://res.cloudinary.com/do3y2cpuq/image/upload/f_auto,q_auto,c_fill,g_auto,w_800/zapatos-formales_bqxqol.jpg 800w,
                         https://res.cloudinary.com/do3y2cpuq/image/upload/f_auto,q_auto,c_fill,g_auto,w_1200/zapatos-formales_bqxqol.jpg 1200w
                         ">
-                        <a href="">comprar</a>
+                        <a href="" class="comprar">comprar</a>
                     </div>
                 </div>
+                <a href="">ver mas sugerencias</a>
 
                 <!-- aventureros -->
                 <h2>Para los que se atreven.</h2>
                 <p>Da el siguiente paso a la aventura</p>
                 <div>
                     <div>
-                        <img src="https://res.cloudinary.com/do3y2cpuq/image/upload/f_auto,q_auto/c_fill,g_auto/w_800/h_500/v1751249900/aventura3_v35y6i.jpg"
+                        <img class="imagen-automatizada"
+                            src="https://res.cloudinary.com/do3y2cpuq/image/upload/f_auto,q_auto/c_fill,g_auto/w_800/h_500/v1751249900/aventura3_v35y6i.jpg"
                             alt="" srcset="
                         https://res.cloudinary.com/do3y2cpuq/image/upload/f_auto,q_auto,c_fill,g_auto,w_400/aventura3_v35y6i.jpg 400w,
                         https://res.cloudinary.com/do3y2cpuq/image/upload/f_auto,q_auto,c_fill,g_auto,w_800/aventura3_v35y6i.jpg 800w,
                         https://res.cloudinary.com/do3y2cpuq/image/upload/f_auto,q_auto,c_fill,g_auto,w_1200/aventura3_v35y6i.jpg 1200w
                         ">
 
-                        <a href="">comprar</a>
+                        <a href="" class="comprar">comprar</a>
                     </div>
                     <div>
-                        <img src="https://res.cloudinary.com/do3y2cpuq/image/upload/f_auto,q_auto/c_fill,g_auto/w_800/h_500/v1751250416/aventura2_urbpll.jpg"
+                        <img class="imagen-automatizada"
+                            src="https://res.cloudinary.com/do3y2cpuq/image/upload/f_auto,q_auto/c_fill,g_auto/w_800/h_500/v1751250416/aventura2_urbpll.jpg"
                             alt="" srcset="
                         https://res.cloudinary.com/do3y2cpuq/image/upload/f_auto,q_auto,c_fill,g_auto,w_400/aventura2_urbpll.jpg 400w,
                         https://res.cloudinary.com/do3y2cpuq/image/upload/f_auto,q_auto,c_fill,g_auto,w_800/aventura2_urbpll.jpg 800w,
                         https://res.cloudinary.com/do3y2cpuq/image/upload/f_auto,q_auto,c_fill,g_auto,w_1200/aventura2_urbpll.jpg 1200w
                         ">
-                        <!-- cambiar a boton comprar -->
-                        <a href="">comprar</a>
+                        <a href="" class="comprar">comprar</a>
                     </div>
                 </div>
-                <a href="">ver mas sugerencias</a>
+                <a href="">ver mas categorías</a>
             </div>
         </section>
 
@@ -152,22 +160,24 @@
                 <h2>Para los pequeños del hogar siempre hay un lugar especial</h2>
                 <div>
                     <div>
-                        <img src="https://res.cloudinary.com/do3y2cpuq/image/upload/f_auto,q_auto/c_fill,g_auto/w_800/h_500/v1751253871/zapatos-ni%C3%B1os_mzshty.jpg"
+                        <img class="imagen-automatizada"
+                            src="https://res.cloudinary.com/do3y2cpuq/image/upload/f_auto,q_auto/c_fill,g_auto/w_800/h_500/v1751253871/zapatos-ni%C3%B1os_mzshty.jpg"
                             alt="" srcset="
                         https://res.cloudinary.com/do3y2cpuq/image/upload/f_auto,q_auto,c_fill,g_auto,w_400/zapatos-ni%C3%B1os_mzshty.jpg 400w,
                         https://res.cloudinary.com/do3y2cpuq/image/upload/f_auto,q_auto,c_fill,g_auto,w_800/zapatos-ni%C3%B1os_mzshty.jpg 800w,
                         https://res.cloudinary.com/do3y2cpuq/image/upload/f_auto,q_auto,c_fill,g_auto,w_1200/zapatos-ni%C3%B1os_mzshty.jpg 1200w
                         ">
-                        <a href="">comprar</a>
+                        <a href="" class="comprar">comprar</a>
                     </div>
                     <div>
-                        <img src="https://res.cloudinary.com/do3y2cpuq/image/upload/f_auto,q_auto,c_fill,g_auto/w_800/h_500/v1751253949/zapatos-ni%C3%B1os2_t6bujr.jpg"
+                        <img class="imagen-automatizada"
+                            src="https://res.cloudinary.com/do3y2cpuq/image/upload/f_auto,q_auto,c_fill,g_auto/w_800/h_500/v1751253949/zapatos-ni%C3%B1os2_t6bujr.jpg"
                             alt="" srcset="
                         https://res.cloudinary.com/do3y2cpuq/image/upload/f_auto,q_auto,c_fill,g_auto,w_400/zapatos-ni%C3%B1os2_t6bujr.jpg 400w,
                         https://res.cloudinary.com/do3y2cpuq/image/upload/f_auto,q_auto,c_fill,g_auto,w_800/zapatos-ni%C3%B1os2_t6bujr.jpg 800w,
                         https://res.cloudinary.com/do3y2cpuq/image/upload/f_auto,q_auto,c_fill,g_auto,w_1200/zapatos-ni%C3%B1os2_t6bujr.jpg 1200w
                         ">
-                        <a href="">comprar</a>
+                        <a href="" class="comprar">comprar</a>
                     </div>
                 </div>
                 <a href="">ver mas sugerencias</a>
@@ -179,27 +189,27 @@
         <section id="reseña">
             <div class="container">
                 <h2>Lo que dicen nuestros clientes...</h2>
-                <div>
+                <div class="reseña-container">
                     <div>
                         <div>
                             <div>image</div>
-                            <div>name</div>
+                            <div>Lorena Montenegro</div>
                         </div>
                         <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Praesentium incidunt eligendi ab,
                             aut nisi nesciunt! Aspernatur nisi, nostrum corrupti expedita exercitationem, officia
                             dolorum vero assumenda quae perspiciatis saepe, nesciunt excepturi?</p>
-                        <div>01/01/2025</div>
+                        <span class="fecha">01/01/2025</span>
                     </div>
 
                     <div>
                         <div>
                             <div>image</div>
-                            <div>name</div>
+                            <div>Carmen Díaz</div>
                         </div>
                         <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Praesentium incidunt eligendi ab,
                             aut nisi nesciunt! Aspernatur nisi, nostrum corrupti expedita exercitationem, officia
                             dolorum vero assumenda quae perspiciatis saepe, nesciunt excepturi?</p>
-                        <div>01/02/2025</div>
+                        <span class="fecha">01/02/2025</span>
                     </div>
                 </div>
                 <a href="">ver mas testimonios</a>
@@ -225,10 +235,10 @@
                         <br>
                         Por cada compra que realices destinamos un porcentaje de esa compra y se lo hacemos llegar a las
                         personas de escasos recursos. <br>
-                        Gracias por tu compra.
+                        <strong>Gracias por tu compra.</strong>
                     </p>
                 </div>
-                <a href="">conoce nuestro equipo</a>
+                <a href="">conoce a nuestro equipo</a>
             </div>
         </section>
 
@@ -241,9 +251,6 @@
                 </p>
 
                 <form action="https://getform.io/f/bolodqra" method="POST">
-
-
-
 
                     <label for="name">Nombre completo:</label>
                     <input type="text" id="name" name="name" required placeholder="Ejemplo: Juan Salazar">
@@ -260,13 +267,13 @@
                     <input type="text" name="_gotcha" style="display: none;" !important>
 
                     <!-- Aceptacion Términos y Condiciones -->
-                    <div class="form-check">
-
-                        <input type="checkbox" id="acepto" name="acepto" required>
-                        <label for="acepto">
-                            He leído y acepto la
-                            <a href="">Política de privacidad</a> y los
-                            <a href="">Términos y condiciones</a>
+                    <div>
+                        <label class="acepto">
+                            <input type="checkbox" name="acepto" required>
+                            <span>
+                                He leído las <a href="">Política de privacidad</a> y los
+                                <a href="">Términos y condiciones</a>.
+                            </span>
                         </label>
                     </div>
 
@@ -279,31 +286,30 @@
 
     <footer>
         <div class="container">
-            <div class="footer-info">
-                <h3>ecommerce.com</h3>
-                <p>Guatemala, Guatemala</p>
-            </div>
+            <div class="sub-container">
+                <div class="footer-info">
+                    <h3>ecommerce.com</h3>
+                    <p>Guatemala, Guatemala</p>
+                </div>
 
-            <div class="footer-links">
-                <ul>
-                    <li><a href="">Política de privacidad</a></li>
-                    <li><a href="">Términos y condiciones</a></li>
-                </ul>
-            </div>
+                <div class="footer-links">
+                    <ul>
+                        <li><a href="">Política de privacidad</a></li>
+                        <li><a href="">Términos y condiciones</a></li>
+                    </ul>
+                </div>
 
-            <div class="footer-social">
-                <h4>Búscanos en</h4>
-                <!--Los aria label como aria-label="Facebook" : sirve para accesibilidad ayudando asi a personas que usan lectores de pantalla. -->
-                <a href="https://facebook.com/ecommerce" target="_blank" rel="noopener noreferrer"
-                    aria-label="Facebook">📘</a>
-                <a href="https://twitter.com/ecommerce" target="_blank" rel="noopener noreferrer"
-                    aria-label="Twitter">🐦</a>
-                <a href="https://instagram.com/ecommerce" target="_blank" rel="noopener noreferrer"
-                    aria-label="Instagram">📸</a>
-            </div>
+                <div class="footer-social">
+                    <h4>Búscanos en</h4>
+                    <!--Los aria label como aria-label="Facebook" : sirve para accesibilidad ayudando asi a personas que usan lectores de pantalla. -->
+                    <a href="https://facebook.com/ecommerce" target="_blank" rel="noopener noreferrer" aria-label="Facebook">📘</a>
+                    <a href="https://twitter.com/ecommerce" target="_blank" rel="noopener noreferrer" aria-label="Twitter">🐦</a>
+                    <a href="https://instagram.com/ecommerce" target="_blank" rel="noopener noreferrer" aria-label="Instagram">📸</a>
+                </div>
 
-            <div class="copy">
-                <p>&copy; 2025. Todos los derechos reservados.</p>
+                <div class="copy">
+                    <p>&copy; 2025. Todos los derechos reservados.</p>
+                </div>
             </div>
         </div>
 
