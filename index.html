@@ -12,6 +12,7 @@
         rel="stylesheet">
 
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="tablet-pc.css">
     <title>Proyecto 2 - One Page - UX/UI</title>
 
 
@@ -19,11 +20,11 @@
 
 <body>
     <header>
-        <div class="container">
+        <div class="container container-nav">
             <nav>
                 <div class="logo">
                     <!-- logo de marca -->
-                    <a href="">Imagen Logo</a>
+                    <img src="images/logo.webp" alt="logo marca zapatos">
                 </div>
                 <!-- menu -->
                 <ul>
@@ -63,7 +64,7 @@
                         https://res.cloudinary.com/do3y2cpuq/image/upload/f_auto,q_auto,c_fill,g_auto,w_1200/hero-section_lzicj5.jpg 1200w
                     ">
                 </div>
-                <a href="" class="comprar">Comprar ahora</a>
+                <a href="" class="comprar">comprar ahora</a>
 
                 <a href="" class="ver-mas">ver mas ofertas</a>
             </div>
@@ -84,7 +85,6 @@
                 https://res.cloudinary.com/do3y2cpuq/image/upload/f_auto,q_auto,c_fill,g_auto,w_800/chapulines-negros-mujer_mn5mnl.jpg 800w,
                 https://res.cloudinary.com/do3y2cpuq/image/upload/f_auto,q_auto,c_fill,g_auto,w_1200/chapulines-negros-mujer_mn5mnl.jpg 1200w
                 ">
-                    <!-- detalles de producto visible solo en desktop  div-->
                 </div>
                 <!-- agregar mas producto en desktop -->
                 <a href="" class="comprar">comprar</a>
@@ -97,57 +97,62 @@
         <!-- seccion para ti -->
         <section id="para-ti">
             <div class="container">
-                <!-- formales -->
-                <h2>Para quienes marcan la diferencia.</h2>
-                <p>Abre la puerta y da el siguiente paso a esa entrevista.</p>
-                <div>
+
+                <h2>Para ti que marcas la diferencia.</h2>
+                <div class="para-ti-container-content">
+                    <!-- formales -->
                     <div>
-                        <img class="imagen-automatizada"
-                            src="https://res.cloudinary.com/do3y2cpuq/image/upload/f_auto,q_auto/c_fill,g_auto/w_800/h_500/v1751252876/zapatos-formales-mujer_dxfjcz.jpg"
-                            alt="" srcset="
+                        <p>Abre la puerta y da el siguiente paso a esa entrevista.</p>
+                        <div>
+                            <div>
+                                <img class="imagen-automatizada"
+                                    src="https://res.cloudinary.com/do3y2cpuq/image/upload/f_auto,q_auto/c_fill,g_auto/w_800/h_500/v1751252876/zapatos-formales-mujer_dxfjcz.jpg"
+                                    alt="mujer posando con tacones" srcset="
                         https://res.cloudinary.com/do3y2cpuq/image/upload/f_auto,q_auto,c_fill,g_auto,w_400/zapatos-formales-mujer_dxfjcz.jpg 400w,
                         https://res.cloudinary.com/do3y2cpuq/image/upload/f_auto,q_auto,c_fill,g_auto,w_800/zapatos-formales-mujer_dxfjcz.jpg 800w,
                         https://res.cloudinary.com/do3y2cpuq/image/upload/f_auto,q_auto,c_fill,g_auto,w_1200/zapatos-formales-mujer_dxfjcz.jpg 1200w
                         ">
-                        <a href="" class="comprar">comprar</a>
-                    </div>
-                    <div class="image-box">
-                        <img class="imagen-automatizada"
-                            src="https://res.cloudinary.com/do3y2cpuq/image/upload/f_auto,q_auto/c_fill,g_auto,c_scale/w_800/h_500/v1751252963/zapatos-formales_bqxqol.jpg"
-                            alt="" srcset="
+                                <a href="" class="comprar">comprar</a>
+                            </div>
+                            <div class="image-box">
+                                <img class="imagen-automatizada"
+                                    src="https://res.cloudinary.com/do3y2cpuq/image/upload/f_auto,q_auto/c_fill,g_auto,c_scale/w_800/h_500/v1751252963/zapatos-formales_bqxqol.jpg"
+                                    alt="hombre posando con mocasines" srcset="
                         https://res.cloudinary.com/do3y2cpuq/image/upload/f_auto,q_auto,c_fill,g_auto,w_400/zapatos-formales_bqxqol.jpg 400w,
                         https://res.cloudinary.com/do3y2cpuq/image/upload/f_auto,q_auto,c_fill,g_auto,w_800/zapatos-formales_bqxqol.jpg 800w,
                         https://res.cloudinary.com/do3y2cpuq/image/upload/f_auto,q_auto,c_fill,g_auto,w_1200/zapatos-formales_bqxqol.jpg 1200w
                         ">
-                        <a href="" class="comprar">comprar</a>
+                                <a href="" class="comprar">comprar</a>
+                            </div>
+                        </div>
                     </div>
-                </div>
-                <a href="">ver mas sugerencias</a>
-
-                <!-- aventureros -->
-                <h2>Para los que se atreven.</h2>
-                <p>Da el siguiente paso a la aventura</p>
-                <div>
+                    <!-- aventureros -->
                     <div>
-                        <img class="imagen-automatizada"
-                            src="https://res.cloudinary.com/do3y2cpuq/image/upload/f_auto,q_auto/c_fill,g_auto/w_800/h_500/v1751249900/aventura3_v35y6i.jpg"
-                            alt="" srcset="
+                        <p>Da el siguiente paso a la aventura</p>
+                        <div>
+                            <div>
+                                <img class="imagen-automatizada"
+                                    src="https://res.cloudinary.com/do3y2cpuq/image/upload/f_auto,q_auto/c_fill,g_auto/w_800/h_500/v1751249900/aventura3_v35y6i.jpg"
+                                    alt="" srcset="
                         https://res.cloudinary.com/do3y2cpuq/image/upload/f_auto,q_auto,c_fill,g_auto,w_400/aventura3_v35y6i.jpg 400w,
                         https://res.cloudinary.com/do3y2cpuq/image/upload/f_auto,q_auto,c_fill,g_auto,w_800/aventura3_v35y6i.jpg 800w,
                         https://res.cloudinary.com/do3y2cpuq/image/upload/f_auto,q_auto,c_fill,g_auto,w_1200/aventura3_v35y6i.jpg 1200w
                         ">
 
-                        <a href="" class="comprar">comprar</a>
-                    </div>
-                    <div>
-                        <img class="imagen-automatizada"
-                            src="https://res.cloudinary.com/do3y2cpuq/image/upload/f_auto,q_auto/c_fill,g_auto/w_800/h_500/v1751250416/aventura2_urbpll.jpg"
-                            alt="" srcset="
+                                <a href="persona en un bote viedo sus zaptos con el mar de fondo"
+                                    class="comprar">comprar</a>
+                            </div>
+                            <div>
+                                <img class="imagen-automatizada"
+                                    src="https://res.cloudinary.com/do3y2cpuq/image/upload/f_auto,q_auto/c_fill,g_auto/w_800/h_500/v1751250416/aventura2_urbpll.jpg"
+                                    alt="" srcset="
                         https://res.cloudinary.com/do3y2cpuq/image/upload/f_auto,q_auto,c_fill,g_auto,w_400/aventura2_urbpll.jpg 400w,
                         https://res.cloudinary.com/do3y2cpuq/image/upload/f_auto,q_auto,c_fill,g_auto,w_800/aventura2_urbpll.jpg 800w,
                         https://res.cloudinary.com/do3y2cpuq/image/upload/f_auto,q_auto,c_fill,g_auto,w_1200/aventura2_urbpll.jpg 1200w
                         ">
-                        <a href="" class="comprar">comprar</a>
+                                <a href="mujer en la orilla de un bote viendo sus zapatos" class="comprar">comprar</a>
+                            </div>
+                        </div>
                     </div>
                 </div>
                 <a href="">ver mas categorías</a>
@@ -156,13 +161,13 @@
 
         <!-- seccion niños -->
         <section id="niños">
-            <div class="container">
+            <div class="container ">
                 <h2>Para los pequeños del hogar siempre hay un lugar especial</h2>
-                <div>
+                <div class="niños-container-content">
                     <div>
                         <img class="imagen-automatizada"
                             src="https://res.cloudinary.com/do3y2cpuq/image/upload/f_auto,q_auto/c_fill,g_auto/w_800/h_500/v1751253871/zapatos-ni%C3%B1os_mzshty.jpg"
-                            alt="" srcset="
+                            alt="zapatos de niño nike color blanco y fucsia" srcset="
                         https://res.cloudinary.com/do3y2cpuq/image/upload/f_auto,q_auto,c_fill,g_auto,w_400/zapatos-ni%C3%B1os_mzshty.jpg 400w,
                         https://res.cloudinary.com/do3y2cpuq/image/upload/f_auto,q_auto,c_fill,g_auto,w_800/zapatos-ni%C3%B1os_mzshty.jpg 800w,
                         https://res.cloudinary.com/do3y2cpuq/image/upload/f_auto,q_auto,c_fill,g_auto,w_1200/zapatos-ni%C3%B1os_mzshty.jpg 1200w
@@ -172,7 +177,7 @@
                     <div>
                         <img class="imagen-automatizada"
                             src="https://res.cloudinary.com/do3y2cpuq/image/upload/f_auto,q_auto,c_fill,g_auto/w_800/h_500/v1751253949/zapatos-ni%C3%B1os2_t6bujr.jpg"
-                            alt="" srcset="
+                            alt="niño posando con mocasines" srcset="
                         https://res.cloudinary.com/do3y2cpuq/image/upload/f_auto,q_auto,c_fill,g_auto,w_400/zapatos-ni%C3%B1os2_t6bujr.jpg 400w,
                         https://res.cloudinary.com/do3y2cpuq/image/upload/f_auto,q_auto,c_fill,g_auto,w_800/zapatos-ni%C3%B1os2_t6bujr.jpg 800w,
                         https://res.cloudinary.com/do3y2cpuq/image/upload/f_auto,q_auto,c_fill,g_auto,w_1200/zapatos-ni%C3%B1os2_t6bujr.jpg 1200w
@@ -285,26 +290,31 @@
     </main>
 
     <footer>
-        <div class="container">
+        <div class="container ">
             <div class="sub-container">
-                <div class="footer-info">
-                    <h3>ecommerce.com</h3>
-                    <p>Guatemala, Guatemala</p>
-                </div>
+                <div>
+                    <div class="footer-info">
+                        <h3>zapatos</h3>
+                        <p>Guatemala, Guatemala</p>
+                    </div>
 
-                <div class="footer-links">
-                    <ul>
-                        <li><a href="">Política de privacidad</a></li>
-                        <li><a href="">Términos y condiciones</a></li>
-                    </ul>
-                </div>
+                    <div class="footer-links">
+                        <ul>
+                            <li><a href="">Política de privacidad</a></li>
+                            <li><a href="">Términos y condiciones</a></li>
+                        </ul>
+                    </div>
 
-                <div class="footer-social">
-                    <h4>Búscanos en</h4>
-                    <!--Los aria label como aria-label="Facebook" : sirve para accesibilidad ayudando asi a personas que usan lectores de pantalla. -->
-                    <a href="https://facebook.com/ecommerce" target="_blank" rel="noopener noreferrer" aria-label="Facebook">📘</a>
-                    <a href="https://twitter.com/ecommerce" target="_blank" rel="noopener noreferrer" aria-label="Twitter">🐦</a>
-                    <a href="https://instagram.com/ecommerce" target="_blank" rel="noopener noreferrer" aria-label="Instagram">📸</a>
+                    <div class="footer-social">
+                        <h4>Búscanos en</h4>
+                        <!--Los aria label como aria-label="Facebook" : sirve para accesibilidad ayudando asi a personas que usan lectores de pantalla. -->
+                        <a href="https://facebook.com/ecommerce" target="_blank" rel="noopener noreferrer"
+                            aria-label="Facebook">📘</a>
+                        <a href="https://twitter.com/ecommerce" target="_blank" rel="noopener noreferrer"
+                            aria-label="Twitter">🐦</a>
+                        <a href="https://instagram.com/ecommerce" target="_blank" rel="noopener noreferrer"
+                            aria-label="Instagram">📸</a>
+                    </div>
                 </div>
 
                 <div class="copy">
@@ -315,6 +325,7 @@
 
     </footer>
 
+    <script src="script.js"></script>
 
 </body>
 

@@ -1,6 +1,6 @@
 /* Estilos base para diseño Mobile First */
 :root{
-
+    --header-alto: 140px;
 }
 *{
     margin: 0;
@@ -15,7 +15,7 @@ body{
     font-family: 'inter', sans-serif;
     font-optical-sizing: auto;
     font-style: normal;
-    font-size: 1.125rem;
+    font-size: 1rem;
     line-height: 1.5;
     letter-spacing: 0.015em;
 }
@@ -41,6 +41,7 @@ h4{
     font-size: 1rem;
 }
 
+
 /* class container reutilizable */
 .container{
     width: 100%;
@@ -48,26 +49,39 @@ h4{
     margin: 0 auto;
     padding: 0 16px;
     text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
 
 /* header */
-header{
-    background-color: aqua;
-    min-height: 100px;
+.container-nav{
+    display: inline-block;
+    padding-bottom: 0.8rem;
 }
-header nav{
-    display: flex;
-    gap: 0.8rem;
+.container-nav{
+    background-color: aqua;
+    min-height: var(--header-alto);
+}
+.container nav .logo{
+    padding-top: 0.935rem;
+}
+.container nav .logo img{
+    width: 100px;
+    height: 100px;
+    border-radius: 0.625rem;
 }
 nav{
     display: flex;
     flex-direction: column;
+    gap: 0.4rem;
 }
 nav ul{
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(8rem, 1fr));
     list-style: none;
-    gap: 0.625rem;
+    gap: 0.4rem;
 }
 nav ul li a{
     text-decoration: none;
@@ -102,17 +116,19 @@ nav ul li{
 }
 img {
   max-height: 500px; /* Altura máxima */
-  width: auto;       /* Ajusta ancho proporcional */
+  width: auto;
+  border-radius: 0.625rem;
 }
 /* optimizando imagenes para que carguen las correspondientes en cada breakpoint */
 
 
 /* diseños de botones y links */
 .comprar{
-    min-width: 12.5px;
-    height: 3rem;
+    /* min-width: 150px; */
+    /* height: 3rem; */
     font-size: 1rem;
-    letter-spacing: 0.05em;
+    max-width: 200px;
+    letter-spacing: 0.004em;
     border-radius: 25px;
     border: none;
     background: greenyellow;
@@ -121,10 +137,12 @@ img {
     align-items: center;
     text-decoration: none;
     margin-bottom: 0.625em;
+    padding: 0.5rem 0.938rem;
 }
-.ver-mas{
-    
+.container a{
+    font-size: 1rem;
 }
+
 
 /* sección novedades */
 #novedades, #para-ti, #niños, #reseña, #sobre-nosotros, #contacto{
@@ -136,13 +154,19 @@ img {
     padding-bottom: 1rem;
     display: block;
 }
+#para-ti .container div > div, #niños .container div > div{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+#para-ti .container div > div a, #niños .container div > div a{
+    margin-top: 0.625rem;    
+}
+
 
 /* seccion reseña */
 .reseña-container{
     padding-bottom: 1rem;
-}
-.reseña-container div > div{
-    display: flex;
 }
 .container .reseña-container div span{
     display: inline-block;
@@ -157,6 +181,7 @@ img {
 #reseña .container .reseña-container > div{
     padding: 0.938rem;
     text-align: left;
+    max-width: 31.25rem;
     background-color: bisque;
     border-radius: 0.625rem;
 }
@@ -261,3 +286,4 @@ footer{
 footer .copy{
     font-size: 0.875rem;
 }
+/* Fin de estilos base para diseño Mobile First */

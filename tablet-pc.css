@@ -1,0 +1,100 @@
+/* Para versiones de teléfonos grandes y tablets */
+:root {
+    /* medidas tablets */
+    --h1-size-tablet: 2.5rem;
+    --h2-size-tablet: 2rem;
+    --p-size-tablet: 1.125rem;
+    /* medidas pc */
+    --h1-size-pc: 3rem;
+    --h2-size-pc: 2.5rem;
+    --p-size-pc: 1.125rem;
+  }
+
+@media only screen and (min-width: 768px){
+    body{
+        font-size: var(--p-size-tablet);
+    }
+    h1{
+        font-size: var(--h1-size-tablet);
+    }
+    h2{
+        font-size: var(--h2-size-tablet);
+    }
+
+    main{
+        padding-top: calc(var(--header-alto));
+    }
+
+    /* comportamiento del Header */
+    header{
+        position: fixed;
+        width: 100%;
+        z-index: 100;
+    }
+    .container-nav{
+        display: flex;
+    }
+    nav {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        align-items: center;
+        width: 100%;
+        gap: 2.5rem;
+    }
+    nav ul{
+        grid-template-columns: repeat(7, auto);
+        gap: 1rem;
+    }
+}
+
+
+/* Para versiones de pc */
+@media only screen and (min-width: 1024px){
+    body{
+        font-size: var(--p-size-pc);
+    }
+    h1{
+        font-size: var(--h1-size-pc);
+    }
+    h2{
+        font-size: var(--h2-size-pc);
+    }
+
+
+    /* seccion para ti */
+    .para-ti-container-content{
+        display: flex;
+        gap: 12.5rem;
+    }
+
+
+    /* seccion niños */
+    .niños-container-content{
+        display: flex;
+        gap: 12.5rem;
+    }
+
+
+    /* seccion reseña */
+    .reseña-container{
+        display: flex;
+        gap: 1.25rem;
+    }
+    #reseña .container .reseña-container > div:first-of-type{
+        margin-bottom: 0;
+    }
+
+
+    /* footer */
+    footer .container .sub-container{
+        width: 100%;
+    }
+    footer .container .sub-container > div{
+        display: flex;
+        justify-content: center;
+        gap: 6.25rem;
+        width: 100%;
+        margin-bottom: 0.8rem;
+    }
+}
