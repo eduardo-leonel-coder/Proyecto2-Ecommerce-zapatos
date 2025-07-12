@@ -10,8 +10,9 @@
     --link-ver-mas: #E0E0E0;
     --link-ver-mas-hover: #C4C4C4;
 
-    --header-alto: 10px;
+    --header-alto: 110px;
 }
+
 :root {
     /* medidas tablets */
     --h1-size-tablet: 2.5rem;
@@ -90,7 +91,7 @@ h4 {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    background: linear-gradient(120deg, rgba(34, 34, 34, 0.1), rgba(0, 123, 255, 0.1));
+    /* background: linear-gradient(120deg, rgba(34, 34, 34, 0.1), rgba(0, 123, 255, 0.1)); */
     transition: 0.3s;
 }
 
@@ -153,6 +154,8 @@ nav ul li {
     position: relative;
     text-align: center;
     padding-bottom: 4rem;
+    background-color: var(--color-fondo-general);
+    background: linear-gradient(170deg, rgba(0, 123, 255, 0.2), rgba(15, 117, 226, 0.1));
 }
 
 #hero-section .container p {
@@ -268,6 +271,7 @@ img {
 #sobre-nosotros,
 #contacto {
     padding-bottom: 3rem;
+    background: linear-gradient(170deg, rgba(0, 123, 255, 0.2), rgba(15, 117, 226, 0.1));
 }
 
 /* seccion para ti */
@@ -338,7 +342,7 @@ img {
     margin-bottom: 2.25rem;
 }
 
-#sobre-nosotros .container > p{
+#sobre-nosotros .container>p {
     font-family: 'Montserrat', sans-serif;
     font-weight: 900;
     font-size: 1.125rem;
@@ -350,7 +354,8 @@ img {
     border-right: 0.25rem solid var(--botones-hover);
     transition: 0.3s;
 }
-#sobre-nosotros .container > p:hover{
+
+#sobre-nosotros .container>p:hover {
     background: var(--botones-hover);
     color: #ffffff;
 }
@@ -515,7 +520,7 @@ footer .copy {
         max-height: 350px;
     }
 
-    /* Evita que el contenido se quede escondido debajo del header cuando se hace click a cierta sección */
+    /* Evita que el contenido se quede escondido debajo del header cuando se hace click a las secciones */
     #hero-section,
     #novedades,
     #para-ti,
@@ -586,7 +591,19 @@ footer .copy {
     /* seccion para ti */
     .para-ti-container-content {
         display: flex;
-        gap: 12.5rem;
+        justify-content: start;
+        gap: 10rem;
+    }
+
+    #para-ti .container .para-ti-container-content .para-ti-container-content-formales {
+        border-right: 2px solid var(--link-ver-mas-hover);
+        padding-right: 50px;
+        margin-bottom: 10px;
+    }
+
+    #para-ti .container .para-ti-container-content .para-ti-container-content-aventureros {
+        padding-right: 65px;
+        padding-left: 63px;
     }
 
 

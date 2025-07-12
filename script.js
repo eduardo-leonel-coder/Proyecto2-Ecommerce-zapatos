@@ -11,7 +11,7 @@ document.querySelectorAll('a[href^="#"').forEach(ira => {
 
         if (destino) {
             /* si el destino esta le agrega el efecto smooth al hacer clic */
-            destino.scrollIntoView({behavior: 'smooth'});
+            destino.scrollIntoView({ behavior: 'smooth' });
         }
     });
 });
