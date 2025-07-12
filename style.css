@@ -156,7 +156,7 @@ nav ul li {
 .hero-edicion {
     padding-top: 1rem;
     padding-bottom: 1rem;
-    background-image: url(/Proyecto2-One-Page-UI-UX/images/hero-section.jpg);
+    /* background-image: url(/Proyecto2-One-Page-UI-UX/images/hero-section.jpg); */
     background-size: contain;
     background-repeat: no-repeat;
     /* background-color: rgba(144, 203, 255, 0.8); */
