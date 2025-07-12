@@ -55,3 +55,9 @@ se agrega el archivo css de diseño para dispositivos mas grandes, pequeñas mod
 
 Desafíos y Soluciones:
 Un desafío encontrado en este proyecto fue hacer que el header se quede visible al hacer scroll en dispositivos como tablet y pc. Pero la solución fue que al llegar a cierto tamaño de pantalla el header debia tener una position=fixed con un z-index=100 para asegurar que el header este por encima de todos los demas elementos y el contenido debia estar a cierta distancia del header para que sea visible en todo momento después de haber hecho click en los enlaces de su sección correspondiente.
+
+Cargar imágenes através de un cdn para mostrar las imágenes adecuadas para cada tamaño de dispositivo.
+La solución fue agregar un ancho máximo a las imágenes.
+
+Mostrar la imagen del hero section como una prioridad de carga para no tener retrasos y mejorar el rendimiento de carga de la imagen.
+La solución fue agregar al header <link rel="preload" as="image"> junto con el enlace al cdn utilizado y agregar en la etiqueta img <fetchpriority="high"> como atributo para decirle al navegador que tiene que cargar la imagen con alta prioridad.
