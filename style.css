@@ -47,7 +47,10 @@ body {
     letter-spacing: 0.025em;
     color: var(--texto-principal);
 }
-
+h1 {
+  margin-block: 0.67em;
+  font-size: 2em;
+}
 h1,
 h2,
 h3,
