@@ -4,6 +4,12 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- agregar csp content security policy... (Se intento agregar) -->
+    <!-- <meta http-equiv="content-security-policy" content="default-src 'self';
+    font-src 'self' https://fonts.gstatic.com https://cdnjs.cloudflare.com
+    https://fonts.googleapis.com https://cdnjs.cloudflare.com;
+    img-src 'self' https://res.cloudinary.com;"> -->
     <meta name="description"
         content="Encuentra zapatos para toda ocasión para trabajo, para viajes, playa e incluso para doctores.">
 
@@ -11,8 +17,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link rel="preconnect" href="https://cdnjs.cloudflare.com" crossorigin>
 
-
-
+    <!-- utilizando rel="preload" as="font" type="font/woff2" para que carguen los recursos rápidamente. -->
     <link rel="preload" as="font" type="font/woff2" crossorigin
         href="https://fonts.gstatic.com/s/inter/v19/UcCo3FwrK3iLTcviYwYZ8UA3.woff2">
     <link rel="preload" as="font" type="font/woff2" crossorigin
@@ -68,6 +73,7 @@
                 <h1>Donde sueñes llegar, tus pasos sabran como hacerlo.</h1>
                 <p>Regalate estilo. <br>Regalate un recuerdo.</p>
 
+                <!-- contenedor de la imagen del hero section -->
                 <div class="hero-edicion">
                     <div>
                         <p><strong>Edición Limitada Q299.99</strong></p>
@@ -82,7 +88,6 @@
                         " sizes="267px">
                 </div>
                 <a href="" class="comprar">comprar ahora</a>
-
                 <a href="" class="ver-mas">ver mas ofertas</a>
             </div>
         </section>
@@ -98,11 +103,11 @@
                     <img class="imagen-automatizada"
                         src="https://res.cloudinary.com/do3y2cpuq/image/upload/f_auto,q_auto/c_fill,g_auto,c_scale/w_380/h_253/v1751247652/chapulines-negros-mujer_mn5mnl.jpg"
                         alt="chapulines negros de mujer" loading="lazy" srcset="
-                https://res.cloudinary.com/do3y2cpuq/image/upload/f_auto,q_auto,c_fill,g_auto,w_400/chapulines-negros-mujer_mn5mnl.jpg 400w,
-                " sizes="400px">
+                        https://res.cloudinary.com/do3y2cpuq/image/upload/f_auto,q_auto,c_fill,g_auto,w_400/chapulines-negros-mujer_mn5mnl.jpg 400w,
+                        " sizes="400px">
                 </div>
                 <span style="color: #007BFF; font-weight: 700;">Q129.99</span>
-                
+
                 <a href="" class="comprar">comprar</a>
                 <a href="" class="ver-mas">mas novedades</a>
             </div>
@@ -124,8 +129,8 @@
                                 <img class="imagen-automatizada"
                                     src="https://res.cloudinary.com/do3y2cpuq/image/upload/f_auto,q_auto/c_fill,g_auto/w_380/h_380/v1751252876/zapatos-formales-mujer_dxfjcz.jpg"
                                     alt="mujer posando con tacones" srcset="
-                        https://res.cloudinary.com/do3y2cpuq/image/upload/f_auto,q_auto,c_fill,g_auto,w_400/zapatos-formales-mujer_dxfjcz.jpg 400w,
-                        " sizes="400px">
+                                    https://res.cloudinary.com/do3y2cpuq/image/upload/f_auto,q_auto,c_fill,g_auto,w_400/zapatos-formales-mujer_dxfjcz.jpg 400w,
+                                    " sizes="400px">
                                 <span style="color: #007BFF; font-weight: 700;">Q149.99</span>
                                 <a href="" class="comprar">comprar</a>
                             </div>
@@ -133,8 +138,8 @@
                                 <img class="imagen-automatizada"
                                     src="https://res.cloudinary.com/do3y2cpuq/image/upload/f_auto,q_auto/c_fill,g_auto,c_scale/w_380/h_380/v1751759509/mocasines-hombre_jr1v8m.jpg"
                                     alt="mocasines negros de hombre" srcset="
-                        https://res.cloudinary.com/do3y2cpuq/image/upload/f_auto,q_auto,c_fill,g_auto,w_400/mocasines-hombre_jr1v8m.jpg 400w,
-                        " sizes="400px">
+                                    https://res.cloudinary.com/do3y2cpuq/image/upload/f_auto,q_auto,c_fill,g_auto,w_400/mocasines-hombre_jr1v8m.jpg 400w,
+                                    " sizes="400px">
                                 <span style="color: #007BFF; font-weight: 700;">Q149.99</span>
                                 <a href="#" class="comprar">comprar</a>
                             </div>
@@ -148,8 +153,8 @@
                                 <img class="imagen-automatizada"
                                     src="https://res.cloudinary.com/do3y2cpuq/image/upload/f_auto,q_auto/c_fill,g_auto/w_267/h_400//v1751758932/estas-en-la-ola_s8whma.jpg"
                                     alt="Hombre posando con zapatos de moda negro" srcset="
-                        https://res.cloudinary.com/do3y2cpuq/image/upload/f_auto,q_auto,c_fill,g_auto,w_400/estas-en-la-ola_s8whma.jpg 400w,
-                        " sizes="400px">
+                                    https://res.cloudinary.com/do3y2cpuq/image/upload/f_auto,q_auto,c_fill,g_auto,w_400/estas-en-la-ola_s8whma.jpg 400w,
+                                    " sizes="400px">
                                 <span style="color: #007BFF; font-weight: 700;">Q199.99</span>
 
                                 <a href="#" class="comprar">comprar</a>
@@ -158,8 +163,8 @@
                                 <img class="imagen-automatizada"
                                     src="https://res.cloudinary.com/do3y2cpuq/image/upload/f_auto,q_auto/c_fill,g_auto/w_267/h_400/v1751758920/estas-en-la-ola2_hb7rk2.jpg"
                                     alt="Zapatos de moda negro" srcset="
-                        https://res.cloudinary.com/do3y2cpuq/image/upload/f_auto,q_auto,c_fill,g_auto,w_400/estas-en-la-ola2_hb7rk2.jpg 400w,
-                        " sizes="400px">
+                                    https://res.cloudinary.com/do3y2cpuq/image/upload/f_auto,q_auto,c_fill,g_auto,w_400/estas-en-la-ola2_hb7rk2.jpg 400w,
+                                    " sizes="400px">
                                 <span style="color: #007BFF; font-weight: 700;">Q199.99</span>
                                 <a href="" class="comprar">comprar</a>
                             </div>
@@ -179,8 +184,8 @@
                         <img class="imagen-automatizada"
                             src="https://res.cloudinary.com/do3y2cpuq/image/upload/f_auto,q_auto/c_fill,g_auto/w_380/h_253/v1751253871/zapatos-ni%C3%B1os_mzshty.jpg"
                             alt="zapatos de niño nike color blanco y fucsia" srcset="
-                        https://res.cloudinary.com/do3y2cpuq/image/upload/f_auto,q_auto,c_fill,g_auto,w_400/zapatos-ni%C3%B1os_mzshty.jpg 400w,
-                        " sizes="400px">
+                            https://res.cloudinary.com/do3y2cpuq/image/upload/f_auto,q_auto,c_fill,g_auto,w_400/zapatos-ni%C3%B1os_mzshty.jpg 400w,
+                            " sizes="400px">
                         <span style="color: #007BFF; font-weight: 700;">Q99.99</span>
                         <a href="" class="comprar">comprar</a>
                     </div>
@@ -188,8 +193,8 @@
                         <img class="imagen-automatizada"
                             src="https://res.cloudinary.com/do3y2cpuq/image/upload/f_auto,q_auto,c_fill,g_auto/w_267/h_400/v1751253949/zapatos-ni%C3%B1os2_t6bujr.jpg"
                             alt="niño posando con mocasines" srcset="
-                        https://res.cloudinary.com/do3y2cpuq/image/upload/f_auto,q_auto,c_fill,g_auto,w_400/zapatos-ni%C3%B1os2_t6bujr.jpg 400w,
-                        " sizes="400px">
+                            https://res.cloudinary.com/do3y2cpuq/image/upload/f_auto,q_auto,c_fill,g_auto,w_400/zapatos-ni%C3%B1os2_t6bujr.jpg 400w,
+                            " sizes="400px">
                         <span style="color: #007BFF; font-weight: 700;">Q99.99</span>
                         <a href="" class="comprar">comprar</a>
                     </div>
@@ -204,6 +209,7 @@
             <div class="container">
                 <h2>Lo que dicen nuestros clientes...</h2>
                 <div class="reseña-container">
+                    <!-- tarjeta de reseña uno -->
                     <div>
                         <div>
                             <div class="reseña-container-imagen"></div>
@@ -214,7 +220,7 @@
                             dolorum vero assumenda quae perspiciatis saepe, nesciunt excepturi?</p>
                         <span class="fecha"><small>01/01/2025</small></span>
                     </div>
-
+                    <!-- tarjeta de reseña dos -->
                     <div>
                         <div>
                             <div class="reseña-container-imagen"></div>
@@ -265,7 +271,7 @@
                 <h2>Contacta con nosotros</h2>
                 <p>Cuéntanos tu experiencia de compra, compártenos tus dudas o sugiere mejoras para tu próxima compra.
                 </p>
-
+                <!-- utilizando servicio de correos desde Getform.io -->
                 <form action="https://getform.io/f/bolodqra" method="POST">
 
                     <label for="name">Nombre completo:</label>

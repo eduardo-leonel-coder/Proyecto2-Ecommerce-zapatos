@@ -91,12 +91,7 @@ h4 {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    /* background: linear-gradient(120deg, rgba(34, 34, 34, 0.1), rgba(0, 123, 255, 0.1)); */
     transition: 0.3s;
-}
-
-.container:hover {
-    /* box-shadow: 1px 1px 10px 1px #00000026; */
 }
 
 /* header */
@@ -164,7 +159,6 @@ nav ul li {
 
 #hero-section .container .hero-edicion div p strong {
     color: var(--botones-hover);
-    /* font-weight: 700; */
     padding-bottom: 3px;
 }
 
@@ -172,10 +166,6 @@ nav ul li {
     padding-top: 1rem;
     padding-bottom: 1rem;
     /* background-image: url(/Proyecto2-One-Page-UI-UX/images/hero-section.jpg); */
-    background-size: contain;
-    background-repeat: no-repeat;
-    /* background-color: rgba(144, 203, 255, 0.8); */
-    background-blend-mode: multiply;
     width: 100%;
     border-radius: 0.625rem;
     margin-top: 0.5rem;
@@ -212,8 +202,6 @@ img {
 
 /* diseños de botones y links */
 .comprar {
-    /* min-width: 150px; */
-    /* height: 3rem; */
     font-size: 1rem;
     max-width: 200px;
     letter-spacing: 0.05em;
@@ -231,7 +219,6 @@ img {
 }
 
 .comprar:hover {
-
     background-color: var(--botones-hover);
 }
 
@@ -500,8 +487,9 @@ footer .copy {
 
 
 
-/* Para versiones de teléfonos grandes y tablets */
+/* Breakpoints para versiones de teléfonos grandes y tablets */
 
+/* Para versiones Tablet */
 @media only screen and (min-width: 768px) {
     body {
         font-size: var(--p-size-tablet);
@@ -531,6 +519,7 @@ footer .copy {
         scroll-margin-top: 113px;
     }
 
+    /* Coloca el contenido debajo del header a -110px el valor de var(--header-alto)*/
     main {
         padding-top: calc(var(--header-alto));
     }
@@ -566,7 +555,7 @@ footer .copy {
 }
 
 
-/* Para versiones de pc */
+/* Para versiones de PC */
 @media only screen and (min-width: 1024px) {
     body {
         font-size: var(--p-size-pc);
@@ -580,7 +569,7 @@ footer .copy {
         font-size: var(--h2-size-pc);
     }
 
-    /* tamaños generales */
+    /* tamaños generales de texto */
     #hero-section .container p,
     #novedades .container p,
     #para-ti .container p {
