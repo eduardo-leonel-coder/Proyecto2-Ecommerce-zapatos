@@ -1,8 +1,11 @@
 ZAPATOS - "SUEÑA EN GRANDE Y LLEGA LEJOS"
 
-EL público objetivo de esta página web es
+Temática: Ecommerce de moda
+El propósito de la página es el de hacer ahorrar dinero al usuario mientras adquiere un producto de calidad.
 
-Y tienen características como la adquisición de productos premium a un precio razonable.
+EL público objetivo de esta página web es todo público con tendencia a compras rápidas en línea que gustan del calzado de moda y buscan comprar con confianza. Ya sean jóvenes o adultos mayores porque ésta página esta pensada para ser de uso simple, óptima y moderna.
+
+El público tiene características como la adquisición de productos premium a un precio razonable sin dejar de lado el toque moderno y elegante.
 
 Los colores utilizados como:
 #222222 Negro suave: transmite elegancia y minimalismo.
@@ -47,3 +50,8 @@ Quinto: el inicio de la estructura HTML utilizando las etiquetas correspondiente
 Quinto: por último se realizaron pruebas con el navegador de google para chequear el contraste presionando las teclas CTRL + SHIFT + C para activar el CONTRAST CHECKER y verificar que se cumplan los estándares de contraste mínimo según (A11y) para una buena práctica de accesibilidad.
 Se utilizó https://validator.w3.org para validar el archivo HTML y verificar el buen uso de las etiquetas para cada caso y garantizar accesibilidad y semántica.
 Se utilizó https://jigsaw.w3.org/css-validator/ para validar el archivo CSS y garantizar la interoperabilidad (interoperabilidad web se refiere a la capacidad de las páginas web de funcionar correctamente en diferentes navegadores, sistemas operativos y dispositivos, siguiendo los estándares web).
+
+se agrega el archivo css de diseño para dispositivos mas grandes, pequeñas modificaciones a la estructura general del HTML/CSS y se agrega el archivo README.md.
+
+Desafíos y Soluciones:
+Un desafío encontrado en este proyecto fue hacer que el header se quede visible al hacer scroll en dispositivos como tablet y pc. Pero la solución fue que al llegar a cierto tamaño de pantalla el header debia tener una position=fixed con un z-index=100 para asegurar que el header este por encima de todos los demas elementos y el contenido debia estar a cierta distancia del header para que sea visible en todo momento después de haber hecho click en los enlaces de su sección correspondiente.
