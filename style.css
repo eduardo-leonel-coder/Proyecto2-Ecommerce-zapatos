@@ -10,7 +10,19 @@
     --link-ver-mas: #E0E0E0;
     --link-ver-mas-hover: #C4C4C4;
 
-    --header-alto: 130px;
+    --header-alto: 10px;
+}
+:root {
+    /* medidas tablets */
+    --h1-size-tablet: 2.5rem;
+    --h2-size-tablet: 2rem;
+    --p-size-tablet: 1.125rem;
+    /* medidas pc */
+    --h1-size-pc: 3rem;
+    --h2-size-pc: 2.5rem;
+    --p-size-pc: 1.125rem;
+    --texto-corto: 1.5rem;
+    --line-height-general: 1.6;
 }
 
 * {
@@ -100,7 +112,7 @@ header .container {
 }
 
 .container-nav {
-    /* min-height: var(--header-alto); */
+    min-height: var(--header-alto);
 }
 
 .container nav .logo {
@@ -484,18 +496,6 @@ footer .copy {
 
 
 /* Para versiones de teléfonos grandes y tablets */
-:root {
-    /* medidas tablets */
-    --h1-size-tablet: 2.5rem;
-    --h2-size-tablet: 2rem;
-    --p-size-tablet: 1.125rem;
-    /* medidas pc */
-    --h1-size-pc: 3rem;
-    --h2-size-pc: 2.5rem;
-    --p-size-pc: 1.125rem;
-    --texto-corto: 1.5rem;
-    --line-height-general: 1.6;
-}
 
 @media only screen and (min-width: 768px) {
     body {
@@ -515,7 +515,7 @@ footer .copy {
         max-height: 350px;
     }
 
-    /* Evita que el contenido se quede escondido debajo del header cuando se hace scroll  */
+    /* Evita que el contenido se quede escondido debajo del header cuando se hace click a cierta sección */
     #hero-section,
     #novedades,
     #para-ti,
@@ -523,7 +523,7 @@ footer .copy {
     #reseña,
     #sobre-nosotros,
     #contacto {
-        scroll-margin-top: 130px;
+        scroll-margin-top: 113px;
     }
 
     main {
