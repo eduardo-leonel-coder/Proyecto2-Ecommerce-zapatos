@@ -1,0 +1,49 @@
+ZAPATOS - "SUEÑA EN GRANDE Y LLEGA LEJOS"
+
+EL público objetivo de esta página web es
+
+Y tienen características como la adquisición de productos premium a un precio razonable.
+
+Los colores utilizados como:
+#222222 Negro suave: transmite elegancia y minimalismo.
+#555555 Gris oscuro: transmite limpieza y profesionalismo.
+#0f75e2 Azul medio oscuro: Confianza, seguridad y fiabilidad.
+#007BFF Azul vibrante:Confianza, seguridad y frescura.
+#F9F9F9 Gris blanco: Limpieza, simplicidad y neutralidad.
+#E0E0E0 Gris claro medio: Neutralidad y orden.
+#C4C4C4 Gris claro medio: Neutro y discreto.
+
+Transmiten el lenguaje premium y elegante que se quiere hacer llegar al usuario, haciendolo sentir seguro, moderno y que esta adquiriendo un estatus alto.
+
+Tipografia:
+Google Fonts
+Título - Poppins: Aporta profesionalismo, claridad y elegancia en su modernidad geométrica la cual llama la atención juvenil, aporta accesibilidad visual.
+
+Texto y Texto secundario - Inter: Es muy legible y funcional no destaca pero si facilita la lectura para aportar al minimalismo que se quiere transmitir.
+
+Estrategia UX implementada:
+El primer vistazo que da el usuario a la página es al encabezado o al hero section, por lo que con una frase llamativa como "Donde sueñes llegar, tus pasos sabran como hacerlo." y acompañándola con mensajes breves capta la atención inmediata del usuario, y al combinarlas con los CTAs sobresalientes le damos la ayuda que el usuario necesita para tomar acción.
+El usuario necesita navegar de forma dinámica y rápida por lo que los colores de los CTAs son visibles y transmiten confianza con contrastes aceptables.
+La navegación sencilla y dinámica hacen que el uso del sitio web sea amigable y rápida. Para que el usuario no pierda el tiempo con demasiadas opciones de las cuales elegir le damos unas cuántos productos visibles con un enlace para ver mas categorías o más productos relacionados.
+
+Implementación del Formulario de Contacto:
+El servicio del Formulario utilizado fue uno que ha sido recomendado llamado Getform.io.
+Para configurar éste servicio es necesario crear una cuenta en https://getform.io/. Después de crear la cuenta se crea una form con un nombre a elegir. 
+GetForm.io nos crea un enlace a nuestra cuenta "https://getform.io/f/bolodqra".
+Se agrega el enlace en nuestra form dentro de la etiqueta con el atributo "action" en HTML de esta forma: <form action="https://getform.io/f/bolodqra" method="POST">.
+Y con ésto ya podemos recibir los emails en nuestra cuenta de Getform.io.
+
+Proceso de Diseño:
+Primero: fue el pensar en las secciones cada una por separado, con sus distintos elementos ubicados de manera estratégica y visual.
+
+Segundo: diseñar las secciones como un boceto a papel para visualizar el resultado final, hubieron varios bocetos para cada sección y al final se utilizaron partes de cada boceto.
+
+Tercero: ver en línea las diferentes plataformas que son retail para asi entender el posicionamiento de elementos clave en la página web como lo son los CTAs.
+
+Cuarto: entender el significado de los colores utilizados para proyectar la imagen de marca, junto a ésto se investigó sobre la accesibilidad (A11y), sobre el diseño UX/UI: como no saturar con mucha información al usuario y que tome una decisión rápida basada en la información que queremos que vea, y cómo las tipografías también aportan a la imagen de marca. Se investigó sobre cómo agregar imágenes con CDNs en tiempo real según el tipo de dispositivo del cual se accede a la página cargando así las imágenes más optimizadas para dicho dispositivo.
+
+Quinto: el inicio de la estructura HTML utilizando las etiquetas correspondientes para cada elemento llevando así un proceso semántico. Después se fue creando el CSS para darle diseño a cada elemento de la página web, tomando en cuenta el diseño MOBILE FIRST para después ir diseñando el comportamiento de varios de los elementos de las diferentes secciones para pantallas mas grandes. También se agrego un poco de código javascript para el comportamiento smooth al hacer scroll.
+
+Quinto: por último se realizaron pruebas con el navegador de google para chequear el contraste presionando las teclas CTRL + SHIFT + C para activar el CONTRAST CHECKER y verificar que se cumplan los estándares de contraste mínimo según (A11y) para una buena práctica de accesibilidad.
+Se utilizó https://validator.w3.org para validar el archivo HTML y verificar el buen uso de las etiquetas para cada caso y garantizar accesibilidad y semántica.
+Se utilizó https://jigsaw.w3.org/css-validator/ para validar el archivo CSS y garantizar la interoperabilidad (interoperabilidad web se refiere a la capacidad de las páginas web de funcionar correctamente en diferentes navegadores, sistemas operativos y dispositivos, siguiendo los estándares web).
