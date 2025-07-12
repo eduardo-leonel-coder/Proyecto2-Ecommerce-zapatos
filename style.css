@@ -479,3 +479,152 @@ footer .copy {
 }
 
 /* Fin de estilos base para diseño Mobile First */
+
+
+
+
+/* Para versiones de teléfonos grandes y tablets */
+:root {
+    /* medidas tablets */
+    --h1-size-tablet: 2.5rem;
+    --h2-size-tablet: 2rem;
+    --p-size-tablet: 1.125rem;
+    /* medidas pc */
+    --h1-size-pc: 3rem;
+    --h2-size-pc: 2.5rem;
+    --p-size-pc: 1.125rem;
+    --texto-corto: 1.5rem;
+    --line-height-general: 1.6;
+}
+
+@media only screen and (min-width: 768px) {
+    body {
+        font-size: var(--p-size-tablet);
+        line-height: var(--line-height-general);
+    }
+
+    h1 {
+        font-size: var(--h1-size-tablet);
+    }
+
+    h2 {
+        font-size: var(--h2-size-tablet);
+    }
+
+    .hero-edicion img {
+        max-height: 350px;
+    }
+
+    /* Evita que el contenido se quede escondido debajo del header cuando se hace scroll  */
+    #hero-section,
+    #novedades,
+    #para-ti,
+    #niños,
+    #reseña,
+    #sobre-nosotros,
+    #contacto {
+        scroll-margin-top: 130px;
+    }
+
+    main {
+        padding-top: calc(var(--header-alto));
+    }
+
+    /* comportamiento del Header */
+    header {
+        position: fixed;
+        width: 100%;
+        z-index: 100;
+    }
+
+    .container-nav {
+        display: flex;
+    }
+
+    nav {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        align-items: center;
+        width: 100%;
+        gap: 2.5rem;
+    }
+
+    nav ul {
+        grid-template-columns: repeat(7, auto);
+        gap: 1rem;
+    }
+
+    #sobre-nosotros .container>p {
+        font-size: 1.5rem;
+    }
+}
+
+
+/* Para versiones de pc */
+@media only screen and (min-width: 1024px) {
+    body {
+        font-size: var(--p-size-pc);
+    }
+
+    h1 {
+        font-size: var(--h1-size-pc);
+    }
+
+    h2 {
+        font-size: var(--h2-size-pc);
+    }
+
+    /* tamaños generales */
+    #hero-section .container p,
+    #novedades .container p,
+    #para-ti .container p {
+        font-size: var(--texto-corto);
+    }
+
+
+    /* seccion para ti */
+    .para-ti-container-content {
+        display: flex;
+        gap: 12.5rem;
+    }
+
+
+    /* seccion niños */
+    .niños-container-content {
+        display: flex;
+        gap: 12.5rem;
+    }
+
+
+    /* seccion reseña */
+    .reseña-container {
+        display: flex;
+        gap: 1.25rem;
+    }
+
+    #reseña .container .reseña-container>div:first-of-type {
+        margin-bottom: 0;
+    }
+
+
+    /* footer */
+    footer .container .sub-container {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+    }
+
+    footer .container .sub-container>div {
+        display: flex;
+        justify-content: space-between;
+        gap: 6.25rem;
+        width: 100%;
+        margin-bottom: 0.8rem;
+    }
+
+    footer .container .sub-container .copy {
+        display: flex;
+        justify-content: center;
+    }
+}
