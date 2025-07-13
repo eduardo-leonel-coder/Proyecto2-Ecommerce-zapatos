@@ -480,9 +480,10 @@ footer .copy {
     font-size: 0.875rem;
 }
 
-.fa-brands {
-    color: var(--botones-hover);
-    font-size: 1.8rem;
+svg{
+    width: var(--h2-size-tablet);
+    height: var(--h2-size-tablet);
+    fill: var(--botones-hover);
 }
 
 /* Fin de estilos base para diseño Mobile First */
