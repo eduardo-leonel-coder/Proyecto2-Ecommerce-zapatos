@@ -46,13 +46,18 @@
 <body>
     <header>
         <div class="container container-nav">
-            <nav>
+            <nav aria-label="Principal">
                 <div class="logo">
                     <!-- logo de marca -->
                     <img src="images/logo120x120.webp" alt="logo de marca zapatos">
                 </div>
                 <!-- menu -->
-                <ul>
+                <div class="nav-hamburguesa-subcontainer"> 
+                    <div class="nav-hamburguesa" id="nav-hamburguesa">
+                        <div id="nav-hamburguesa-toggle"></div>
+                    </div>
+                </div>
+                <ul id="nav-hamburguesa-mostrar">
                     <li><a href="#hero-section">Inicio</a></li>
                     <li><a href="#novedades">Novedades</a></li>
                     <li><a href="#para-ti">Para ti</a></li>
@@ -84,11 +89,15 @@
                     que haga un recorte de imagen con la parte mas importante. -->
                     <img class="imagen-automatizada"
                         src="https://res.cloudinary.com/do3y2cpuq/image/upload/f_auto,q_auto/c_fill,g_auto,c_scale/w_267/h_400/v1751758904/estas-en-la-ola3_qzmiph.jpg"
-                        alt="zapatos edicion limitada" fetchpriority="high" srcset="https://res.cloudinary.com/do3y2cpuq/image/upload/f_auto,q_auto,c_fill,g_auto,w_400/estas-en-la-ola3_qzmiph.jpg 400w,
-                        " sizes="267px">
+                        width="267"
+                        height="400"
+                        alt="zapatos edicion limitada" 
+                        decoding="async"
+                        fetchpriority="high"
+                        srcset="https://res.cloudinary.com/do3y2cpuq/image/upload/f_auto,q_auto,c_fill,g_auto,w_400/estas-en-la-ola3_qzmiph.jpg 400w,">
                 </div>
-                <a href="#" class="comprar">comprar ahora</a>
-                <a href="#" class="ver-mas">ver mas ofertas</a>
+                <button type="button" class="comprar">comprar ahora</button>
+                <a href="/mas-ofertas" class="ver-mas">ver más ofertas</a>
             </div>
         </section>
 
@@ -108,8 +117,8 @@
                 </div>
                 <span style="color: #007BFF; font-weight: 700;">Q129.99</span>
 
-                <a href="#" class="comprar">comprar</a>
-                <a href="#" class="ver-mas">mas novedades</a>
+                <button type="button" class="comprar">comprar</button>
+                <a href="/mas-novedades" class="ver-mas">más novedades</a>
             </div>
 
         </section>
@@ -132,7 +141,7 @@
                                     https://res.cloudinary.com/do3y2cpuq/image/upload/f_auto,q_auto,c_fill,g_auto,w_400/zapatos-formales-mujer_dxfjcz.jpg 400w,
                                     " sizes="400px">
                                 <span style="color: #007BFF; font-weight: 700;">Q149.99</span>
-                                <a href="#" class="comprar">comprar</a>
+                                <button type="button" class="comprar">comprar</button>
                             </div>
                             <div class="image-box">
                                 <img class="imagen-automatizada"
@@ -141,7 +150,7 @@
                                     https://res.cloudinary.com/do3y2cpuq/image/upload/f_auto,q_auto,c_fill,g_auto,w_400/mocasines-hombre_jr1v8m.jpg 400w,
                                     " sizes="400px">
                                 <span style="color: #007BFF; font-weight: 700;">Q149.99</span>
-                                <a href="#" class="comprar">comprar</a>
+                                <button type="button" class="comprar">comprar</button>
                             </div>
                         </div>
                     </div>
@@ -157,7 +166,7 @@
                                     " sizes="400px">
                                 <span style="color: #007BFF; font-weight: 700;">Q199.99</span>
 
-                                <a href="#" class="comprar">comprar</a>
+                                <button type="button" class="comprar">comprar</button>
                             </div>
                             <div>
                                 <img class="imagen-automatizada"
@@ -166,12 +175,12 @@
                                     https://res.cloudinary.com/do3y2cpuq/image/upload/f_auto,q_auto,c_fill,g_auto,w_400/estas-en-la-ola2_hb7rk2.jpg 400w,
                                     " sizes="400px">
                                 <span style="color: #007BFF; font-weight: 700;">Q199.99</span>
-                                <a href="#" class="comprar">comprar</a>
+                                <button type="button" class="comprar">comprar</button>
                             </div>
                         </div>
                     </div>
                 </div>
-                <a href="#" class="ver-mas">ver mas categorías</a>
+                <a href="/mas-categorias" class="ver-mas">ver más categorías</a>
             </div>
         </section>
 
@@ -187,7 +196,7 @@
                             https://res.cloudinary.com/do3y2cpuq/image/upload/f_auto,q_auto,c_fill,g_auto,w_400/zapatos-ni%C3%B1os_mzshty.jpg 400w,
                             " sizes="400px">
                         <span style="color: #007BFF; font-weight: 700;">Q99.99</span>
-                        <a href="#" class="comprar">comprar</a>
+                        <button type="button" class="comprar">comprar</button>
                     </div>
                     <div>
                         <img class="imagen-automatizada"
@@ -196,10 +205,10 @@
                             https://res.cloudinary.com/do3y2cpuq/image/upload/f_auto,q_auto,c_fill,g_auto,w_400/zapatos-ni%C3%B1os2_t6bujr.jpg 400w,
                             " sizes="400px">
                         <span style="color: #007BFF; font-weight: 700;">Q99.99</span>
-                        <a href="#" class="comprar">comprar</a>
+                        <button type="button" class="comprar">comprar</button>
                     </div>
                 </div>
-                <a href="#" class="ver-mas">ver mas sugerencias</a>
+                <a href="/mas-sugerencias" class="ver-mas">ver más sugerencias</a>
             </div>
         </section>
 
@@ -232,7 +241,7 @@
                         <span class="fecha"><small>01/02/2025</small></span>
                     </div>
                 </div>
-                <a href="#" class="ver-mas">ver mas testimonios</a>
+                <a href="/mas-testimonios" class="ver-mas">ver más testimonios</a>
             </div>
         </section>
 
@@ -247,7 +256,7 @@
                 </div>
                 <div>
                     <div>100k+</div>
-                    <p>Mas de 100 mil clientes confían en nosotros.</p>
+                    <p>Más de 100 mil clientes confían en nosotros.</p>
                 </div>
                 <div>
                     <div>50k+</div>
@@ -260,7 +269,7 @@
                 </div>
                 <small>Nuestro eslogan</small>
                 <p>"SUEÑA EN GRANDE Y LLEGA LEJOS."</p>
-                <a href="#" class="ver-mas">conoce a nuestro equipo</a>
+                <a href="/nuestro-equipo" class="ver-mas">conoce a nuestro equipo</a>
             </div>
         </section>
 
@@ -277,7 +286,7 @@
                     <label for="name">Nombre completo:</label>
                     <input type="text" id="name" name="name" required placeholder="Ejemplo: Juan Salazar">
 
-                    <label for="email">Correo eletrónico</label>
+                    <label for="email">Correo electrónico</label>
                     <input type="email" id="email" name="email" aria-describedby="email-no-compartido" required
                         placeholder="Ejemplo: juansalazar@gmail.com">
                     <small id="email-no-compartido">No compartimos tu correo con nadie.</small>
@@ -293,8 +302,8 @@
                         <label class="acepto">
                             <input type="checkbox" name="acepto" required>
                             <span>
-                                He leído las <a href="#">Política de privacidad</a> y los
-                                <a href="#">Términos y condiciones</a>.
+                                He leído las <a href="/politica-de-privacidad">Política de privacidad</a> y los
+                                <a href="/terminos-y-condiciones">Términos y condiciones</a>.
                             </span>
                         </label>
                     </div>
@@ -317,8 +326,8 @@
 
                     <div class="footer-links">
                         <ul>
-                            <li><a href="#">Política de privacidad</a></li>
-                            <li><a href="#">Términos y condiciones</a></li>
+                            <li><a href="/politica-de-privacidad">Política de privacidad</a></li>
+                            <li><a href="/terminos-y-condiciones">Términos y condiciones</a></li>
                         </ul>
                     </div>
 
