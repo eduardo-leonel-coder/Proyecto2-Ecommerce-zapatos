@@ -47,10 +47,12 @@ body {
     letter-spacing: 0.025em;
     color: var(--texto-principal);
 }
+
 h1 {
-  margin-block: 0.67em;
-  font-size: 2em;
+    margin-block: 0.67em;
+    font-size: 2em;
 }
+
 h1,
 h2,
 h3,
@@ -125,17 +127,80 @@ header .container {
 }
 
 nav {
-    display: flex;
-    flex-direction: column;
+
     gap: 0.4rem;
+    
+    position: relative;
 }
 
 nav ul {
-    display: grid;
+    display: none;
     grid-template-columns: repeat(auto-fit, minmax(8rem, 1fr));
     list-style: none;
     gap: 0.4rem;
 }
+
+/* menu hamburguesa inicio */
+#nav-hamburguesa-mostrar.mostrar {
+    display: grid;
+    position: absolute;
+    width: 100%;
+    z-index: 200;
+    top: 110px;
+    left: 0;
+    background-color: var(--botones);
+}
+
+.nav-hamburguesa-subcontainer {
+    position: absolute;
+    right: 0;
+    top: 0;
+}
+
+.nav-hamburguesa {
+    position: relative;
+    width: 50px;
+    height: 40px;
+    margin-top: 25px;
+    cursor: pointer;
+}
+
+.nav-hamburguesa div {
+    width: 100%;
+    height: 3px;
+    background: white;
+}
+
+.nav-hamburguesa::before,
+.nav-hamburguesa::after {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 3px;
+    background: white;
+}
+
+.nav-hamburguesa::before {
+    top: 40px;
+    left: 0;
+}
+
+.nav-hamburguesa::after {
+    top: 20px;
+    left: 0;
+}
+
+.nav-hamburguesa.rotar-menu::after{
+    transform: rotate(45deg);
+}
+.nav-hamburguesa.rotar-menu::before{
+    transform: rotate(-45deg) translateY(-15px) translateX(15px);
+}
+
+#nav-hamburguesa-toggle{
+
+}
+/* menu hamburguesa fin */
 
 nav ul li a {
     text-decoration: none;
@@ -146,6 +211,8 @@ nav ul li {
     border-bottom: 2px solid black;
     padding: 5px;
 }
+/* header fin */
+
 
 /* Hero section */
 #hero-section {
@@ -206,15 +273,16 @@ img {
 /* diseños de botones y links */
 .comprar {
     font-size: 1rem;
+    font-weight: 600;
     max-width: 200px;
     letter-spacing: 0.05em;
     border-radius: 25px;
+    border: none;
     background: var(--botones);
     color: #ffffff;
     display: flex;
     justify-content: center;
     align-items: center;
-    text-decoration: none;
     margin-bottom: 0.625em;
     padding: 0.5rem 0.938rem;
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.13);
@@ -480,7 +548,7 @@ footer .copy {
     font-size: 0.875rem;
 }
 
-svg{
+svg {
     width: var(--h2-size-tablet);
     height: var(--h2-size-tablet);
     fill: var(--botones-hover);
@@ -546,6 +614,14 @@ svg{
         align-items: center;
         width: 100%;
         gap: 2.5rem;
+    }
+
+    .nav-hamburguesa {
+        display: none;
+    }
+
+    nav ul {
+        display: grid;
     }
 
     nav ul {
