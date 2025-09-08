@@ -366,6 +366,7 @@ img {
     display: block;
 }
 
+/* para poder agregar mas elementos de producto tendre que transformar el display flex a display grid y agregarle un ancho minimo al elemento y un maximo de columnas cuando alcance cierta medida de pantalla. */
 #para-ti .container div>div,
 #niños .container div>div {
     display: flex;
